@@ -12,4 +12,12 @@ import (
 
 func main() {
 	fmt.Println("The time is", time.Now())
+
+	//Formatting options
+	//Adapted from https://gobyexample.com/time-formatting-parsing
+	printLine := fmt.Println
+
+	t := time.Now()
+	printLine(t.Format(time.RFC3339))
+
 }
