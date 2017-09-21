@@ -8,12 +8,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, 世界")
+	fmt.Println("こんにちは、世界！")
 
-//English version
-	fmt.Println("Hello, World")
-
-//Another way
+//Another way in english
 	string_1 := "Hello"
 	string_2 := "World"
 	fmt.Println(string_1 + ", " + string_2)
