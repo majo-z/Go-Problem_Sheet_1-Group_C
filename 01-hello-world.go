@@ -9,4 +9,12 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello, 世界")
+
+//English version
+	fmt.Println("Hello, World")
+
+//Another way
+	string_1 := "Hello"
+	string_2 := "World"
+	fmt.Println(string_1 + ", " + string_2)
 }
