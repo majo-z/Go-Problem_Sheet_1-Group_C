@@ -1,6 +1,9 @@
-//newton’s method for calculating square roots
+//Description: Newton’s method for calculating square roots
 //Newton’s method is to approximate the square root of a number x by picking a starting point z and then repeating the following operation.
 //zNext = z - ((z*z - x) / (2 * z))
+//Author: Marian Ziacik
+//Date: 4-oct 2017
+//Adapted from Ian McLoughlin
 
 package main
 
