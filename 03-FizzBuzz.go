@@ -10,7 +10,9 @@ func main() {
 	outputBuzz := "Buzz"
 
 	for i := 1; i <= 100; i++ {
-		if i%3 == 0 {
+		if i%3 == 0 && i%5 == 0 {
+			fmt.Println(outputFizz + outputBuzz)
+		} else if i%3 == 0 {
 			fmt.Println(outputFizz)
 		} else if i%5 == 0 {
 			fmt.Println(outputBuzz)
