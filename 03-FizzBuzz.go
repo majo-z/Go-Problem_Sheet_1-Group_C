@@ -6,10 +6,12 @@ import (
 
 func main() {
 
-	var output string = ""
+	outputNumbers := ""
+	//outputFizz := "Fizz"
+	//outputBuzz := "Buzz"
 
 	for i := 1; i <= 100; i++ {
-		if output == "" {
+		if outputNumbers == "" {
 			fmt.Println(i)
 		}
 	}
