@@ -8,7 +8,7 @@ func main() {
 }
 
 //function for string reverse
-func ReverseString(s string) string {
+func ReverseString(str string) string {
 	var reverse string
 	return reverse
 }
