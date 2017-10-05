@@ -32,13 +32,13 @@ func main() {
 
 	//scan user input for square root
 	fmt.Printf("Please enter the number to find square root of: ")
-	fmt.Scanf("%f", &x)
+	fmt.Scanf("%f\n", &x)
 
 	//scan user input for initial guess
 	fmt.Printf("Please enter your guess: ")
-	fmt.Scan(&startingGuess)
+	fmt.Scanf("%f\n", &startingGuess)
+	//fmt.Scan(&startingGuess)
 	fmt.Println()
-	//fmt.Scanf("%f", &startingGuess) //doesn't work
 
 	//Another way (Adapted from: https://stackoverflow.com/questions/3751429/reading-an-integer-from-standard-input/3751456)
 	/* if _, err := fmt.Scan(&startingGuess); err != nil {
