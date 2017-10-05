@@ -13,9 +13,9 @@ func main() {
 	fmt.Println("こんにちは、世界！")
 
 	//Another way in english using concatenating
-	string_1 := "Hello"
-	string_2 := "World!"
-	fmt.Println(string_1 + ", " + string_2)
+	string1 := "Hello"
+	string2 := "World!"
+	fmt.Println(string1 + ", " + string2)
 
 	//Different ways
 	var message string //message := "Hello, World"
