@@ -1,3 +1,7 @@
+//Description: Write a function to reverse a string in Go.
+//Author: Marian Ziacik
+//Date: 5-oct 2017
+//Adopted from https://coderwall.com/p/fw6miw/reverse-text-in-golang
 package main
 
 import "fmt"
