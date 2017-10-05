@@ -9,5 +9,6 @@ func main() {
 
 //function for string reverse
 func ReverseString(s string) string {
-
+	var reverse string
+	return reverse
 }
