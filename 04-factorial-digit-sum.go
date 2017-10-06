@@ -1,9 +1,9 @@
 //Description: Program calculates the sum of the digits of the factorial of a number 100
-//Assuminf the numbers are integers only
+//Assuming the numbers are integers only
 //Author: Marian Ziacik
 //Date: 5-oct 2017
 
-//The Go Programming Language Documents:
+//Go Programming Language Documents:
 //MulRange: //https://golang.org/pkg/math/big/#Int.MulRange
 //strings: https://golang.org/pkg/strings/#Split
 //strconv: https://golang.org/pkg/strconv/
