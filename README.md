@@ -3,7 +3,7 @@ My name is Marian and I am 3rd year software development student at GMIT.
 This repository contains answer to the Go problem sheet from https://data-representation.github.io/problems/go-fundamentals.html
 
 ## Running the code
-Repository can be found at https://github.com/majo-z/Go-Problem_Sheet_1-Group_C.git. The programs has be written by Go programming language. 
+The repository can be found at https://github.com/majo-z/Go-Problem_Sheet_1-Group_C.git. The programs has be written in Go programming language. 
 To run the code in this repository, the files must first be compiled. The [Go compiler](https://golang.org/dl/) and [Git](https://git-scm.com/) must first be installed on your machine.
 Once they are installed, the code can be compiled and run by following the steps below.
 We assume you are using the command line.
@@ -34,7 +34,5 @@ Hello, world!
 
 ## Learn more about Go language
 https://golang.org/
-
 https://golang.org/doc/code.html
-
 https://play.golang.org/
