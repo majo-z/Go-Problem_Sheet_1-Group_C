@@ -17,7 +17,6 @@ func main() {
 	myrand := rand.Intn(max-min) + min
 	var attempts int
 	var guess int
-	var isCorrect bool
 
 	fmt.Println("Welcome to Guess My Number Game!")
 	for guess != myrand {
@@ -33,12 +32,7 @@ func main() {
 			fmt.Println("Too high")
 		} else if guess < myrand {
 			fmt.Println("Too low")
-		} else {
-			isCorrect = true
-			break
 		}
 	} //for
-	if isCorrect {
-		fmt.Printf("Right Answer! You guessed it in %v tries", attempts)
-	}
+	fmt.Printf("Right Answer! You guessed it in %v attempts", attempts)
 } //main
