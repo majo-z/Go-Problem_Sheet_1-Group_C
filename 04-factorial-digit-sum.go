@@ -53,7 +53,7 @@ func main() {
 } //main
 
 /*
-//Another way using function factorial
+//Different way using function factorial
 //Adapted from https://stackoverflow.com/questions/11270547/go-big-int-factorial-with-recursion
 func factorial(n *big.Int) *big.Int {
 
