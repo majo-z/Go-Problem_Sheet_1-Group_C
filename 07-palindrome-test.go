@@ -1,6 +1,6 @@
 //Description: Program tests whether a string is a palindrome. A palindrome is a string that reads the same in reverse, e.g. radar.
 //Author: Marian Ziacik
-//Date: ^-oct 2017
+//Date: 6-oct 2017
 
 // Goolang Documentation: strings
 //https://golang.org/src/strings/example_test.go
