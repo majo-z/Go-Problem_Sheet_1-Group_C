@@ -7,10 +7,15 @@
 //https://tour.golang.org/moretypes/6
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
+
 	numbers := []int{23, 43, 54, 23, 43, 54, 65, 76, -10, 32, -343}
+	fmt.Println("Array", numbers)
+	fmt.Printf("Smallest and largest numbers are: ")
 	fmt.Println(largestSmallest(numbers))
 }
 
