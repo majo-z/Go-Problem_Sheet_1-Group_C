@@ -1,9 +1,10 @@
-//Description: Program that returns the largest and smallest elements in a array
+//Description: Program that returns the largest and smallest elements in a array, slice
 //Input type: integers
 //Author: Marian Ziacik
 //Date: 6-oct 2017
-//The Go Programming Language Documents:
-// https://tour.golang.org/moretypes/6
+
+//A Tour of go example:
+//https://tour.golang.org/moretypes/6
 package main
 
 import "fmt"
@@ -18,7 +19,7 @@ func largestSmallest(numbers []int) (int, int) { //enter array
 	//Initialize smallest and largest to 0
 	smallest := numbers[0]
 	largest := numbers[0]
-
+	//range iterates over the numbers
 	for _, num := range numbers { //don't need index (_)
 		if num > largest {
 			largest = num
