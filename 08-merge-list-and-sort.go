@@ -1,13 +1,17 @@
 //Description: Program merges two sorted lists into a new sorted list, e.g. merge([1,4,6], [2,3,5]) = [1,2,3,4,5,6].
+//Varible type: floats
 //Author: Marian Ziacik
 //Date: 6-oct 2017
+
+//Go Programming Language Documents:
+//Slices: usage and internals https://blog.golang.org/go-slices-usage-and-internals
+//Appending to a slice https://tour.golang.org/moretypes/15
+//Sort slices https://golang.org/pkg/sort/
 package main
 
 import (
 	"fmt"
 	"sort"
-	"strconv"
-	"strings"
 )
 
 //import "bufio"
@@ -18,16 +22,28 @@ func main() {
 	slice1 := []float64{3.2, 6.3, 54.3}
 	slice2 := []float64{1.2, 4.5, 23.0}
 	//print slices
-	fmt.Println(slice1)
-	fmt.Println(slice2)
+	fmt.Println("Slice1", slice1)
+	fmt.Println("Slice2", slice2)
 
 	fmt.Println()
 
-	//if the slice is declared as string
-	s := "54.34 654.4 343.54"
-	strings.Split(s, " ")     //if the floats are entered like "54.34 654.4 343.54"
-	strconv.ParseFloat(s, 64) //to get float64
-	fmt.Println(s)
+	slice3 := make([]float64, 0) //create new empty slice
+	//slice3 = append(slice3, slice1...)//append slice1
+	//slice3 = append(slice3, slice2...)//append slice2
+	slice3 = append(slice3, append(slice1, slice2...)...) //shorthand for appending slice1 and slice2...append can take any number of values
+	fmt.Println("Slice3", slice3)                         //print the slice3(slice1 and slice2 are appended)
+
+	sort.Float64s(slice3)                //sorts in-place
+	fmt.Println("Slice3 Sorted", slice3) //print the sorted slice
+
+	fmt.Println()
+	//======================================================================
+
+	//==================== MORE EXAMPLES ===================================
+	//var slice4 []float64 = make([]float64, 5) //create slice of 5 elements, initialized to 0
+	//slice4 := make([]float64, 5) //shorthand
+	slice4 := make([]float64, len(slice1)+len(slice2)) //create slice of length of slice1 and slice2
+	fmt.Println(slice4)
 
 	/*
 	   scanner := bufio.NewScanner(os.Stdin)
@@ -40,25 +56,4 @@ func main() {
 	   fmt.Println(slice1String)
 	   fmt.Println(slice2String)
 	*/
-
-	// slice3 := make([]float64, len(slice1) + len(slice2))
-	var slice3 []float64 = make([]float64, 5)
-	fmt.Println(slice3)
-
-	// https://tour.golang.org/moretypes/15
-	//slice3 = append(slice3, append(slice1, slice2...)...) //append can take any number of values.
-	slice3 = append(slice3, slice1...)
-	slice3 = append(slice3, slice2...)
-
-	fmt.Println(slice3)
-	//https://golang.org/pkg/sort/
-	sort.Float64s(slice3) // sorts in-place
-	fmt.Println(slice3)
-	//function(1,2,3,4,5,6,7,98, 32,43,54,65,34)
 }
-
-/* func function(numbers ...int) {
-	for _, num := range numbers {
-		fmt.Println(num)
-	}
-} */
