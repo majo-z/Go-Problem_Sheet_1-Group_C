@@ -27,7 +27,7 @@ func main() {
 	fmt.Printf("Factorial of %d is: %d\n\n", num, res) //print as bigInt
 
 	//=============================================================================
-
+	fmt.Printf("=============== HARD CODED EXAMPLE ===============\n")
 	num2 := big.NewInt(100) // *Int
 	//fmt.Println(factorial(num2))
 
