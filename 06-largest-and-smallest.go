@@ -1,4 +1,5 @@
 //Description: Program that returns the largest and smallest elements in a array
+//Input type: integers
 //Author: Marian Ziacik
 //Date: 6-oct 2017
 //The Go Programming Language Documents:
