@@ -31,3 +31,8 @@ Hello, world!
 > go compile <filename.go>
 > ./<filename.exe>
 ```
+
+## Learn more about Go language
+https://golang.org/
+https://golang.org/doc/code.html
+https://play.golang.org/
