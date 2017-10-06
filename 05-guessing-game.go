@@ -21,6 +21,7 @@ func main() {
 	myrand := rand.Intn(max-min) + min //generates random number
 	var attempts int
 	var guess int
+	lastGuess := -1 //avoid counting the same number twice
 
 	fmt.Println("Welcome to Guess My Number Game!")
 	for guess != myrand {
@@ -33,11 +34,16 @@ func main() {
 		if guess < min || guess > max {
 			fmt.Println("Out of range, try again")
 			attempts-- //don't count input when out of range
+		} else if guess == lastGuess {
+			attempts--
+			fmt.Println("You just guessed that! Pick a different number.")
 		} else if guess > myrand {
 			fmt.Println("Too high")
 		} else if guess < myrand {
 			fmt.Println("Too low")
 		}
+
+		lastGuess = guess
 	} //for
 	//print number of attempts
 	fmt.Printf("Right Answer! You guessed it in %v attempts", attempts)
